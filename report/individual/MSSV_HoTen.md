@@ -89,23 +89,35 @@ Tự kiểm tay trong file JSON:
 
 | File | Người / mặt kiểm (ảnh, thứ tự) | Số phần tử `keypoints` | Điểm `outside` ra `v = 0`, `occluded` ra `v = 1`? | `num_keypoints` khớp? |
 |---|---|---:|---|---|
+| `HoVaTen_persons.zip` |12 |291 | ok| 14.6|
 | `HoVaTen_persons.zip` | | | | |
-| `HoVaTen_persons.zip` | | | | |
-| `HoVaTen_faces.zip` | | | | |
+| `HoVaTen_faces.zip` |8 |104 |ok |13.0 |
 
-Sau khi xuất, CVAT ghi `occluded` thành `v = ___` và `outside` thành `v = ___`. Tọa độ của điểm `outside` trong file là `0, 0` hay tọa độ cũ? ___
+Sau khi xuất, CVAT ghi `occluded` thành `v = 1` và `outside` thành `v = 0`. Tọa độ của điểm `outside` trong file là `0, 0` hay tọa độ cũ? toa do cu
 
-Hai job đã chuyển sang completed trên CVAT? Có / Không
+Hai job đã chuyển sang completed trên CVAT? Có 
 
 Dán phần **TÓM TẮT** in ra từ `src/check_submission.py`:
 
 ```text
-(dán ở đây)
+"""Tự kiểm file xuất COCO Keypoints 1.0 của Lab Ngày 4 (Keypoint & Pose).
+
+Cách chạy (từ thư mục gốc repo, Python 3.9+, không cần cài thư viện):
+
+    python src/check_submission.py --persons src/exports/HoVaTen_persons.zip \
+                                   --faces   src/exports/HoVaTen_faces.zip
+
+Script KHÔNG có ground truth: không tính OKS, không biết điểm có nằm đúng khớp
+hay không. Nó kiểm định dạng file và các dấu hiệu lỗi hay gặp. Không có cảnh
+báo chưa chắc là đúng: vẫn phải tự review (CP3).
+
+Mã thoát: 0 nếu không có [LỖI], 1 nếu còn [LỖI], 2 nếu không đọc được file.
+"""
 ```
 
 Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
 
-...
+
 
 ## 6. Ảnh chụp màn hình
 
@@ -131,7 +143,7 @@ Nguồn ảnh: COCO val2017 / Wikimedia Commons.
 
 1. Lỗi bạn mắc nhiều nhất hôm nay, và cách bạn sẽ tránh ở dự án thật:
 
-   ...
+   lr_swap, bo qua phan che khuat lam sai
 
 2. Một quy tắc bạn đề xuất thêm vào guideline (kèm ảnh ví dụ nếu có):
 
