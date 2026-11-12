@@ -20,8 +20,8 @@ Dữ liệu: 12 ảnh người COCO val2017 (Lin et al., 2014) và 8 ảnh chân
 
 | Label | Kiểu | Số điểm | Tên điểm đúng bảng của lab? | Đúng thứ tự? | Số cạnh |
 |---|---|---:|---|---|---:|
-| `person` | | | | | |
-| `face` | | | | | |
+| `person` | skeleton | 17 | co | co | |
+| `face` | skeleton | 13 | co | co | |
 
 Mẫu `person` dựng theo người quay mặt về camera (các điểm `left_*` nằm bên phải khung mẫu)? Có 
 
@@ -33,7 +33,7 @@ Cách đổi cờ `occluded` / `outside` cho **một điểm** trên phiên bả
 
 | Nhóm ảnh | Số ảnh | Số skeleton đã gán | Số người dưới 60 px (không gán) | Số poster / gương / màn hình bỏ qua | Thời gian (phút) |
 |---|---:|---:|---:|---:|---:|
-| `easy` | 5 | | | | |
+| `easy` | 5 |  | | | |
 | `occluded` | 3 | | | | |
 | `back` | 2 | | | | |
 | `small` | 1 | | | | |
