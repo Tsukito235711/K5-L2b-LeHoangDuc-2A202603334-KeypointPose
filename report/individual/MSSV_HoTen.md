@@ -64,14 +64,14 @@ Mã lỗi dùng đúng một trong: `lr_swap`, `vis_flag`, `position`, `missing`
 
 | Ảnh | Người / mặt | Điểm | Mã lỗi | Ghi chú | Đã sửa? |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+|000000043968.jpg |nguoi |knee |lr_swap | kho|done |
+| 000000309169.jpg|nguoi |knee |lr swap |kho |done |
+|000000311300.jpg| nguoi|knee |lr swap |kho |done |
+|000000311300.jpg | nguoi| ankle|lr swap |kho |done |
+|000000360811.jpg |nguoi |right elbow | right elbow| su dung nham H thay vi O| done|
+|face_575921 |face | |khong |ok | |
+|face_53580 |face | khong| ok| | |
+| face_490361| face|khong |ok | | |
 
 Tổng hợp số lỗi theo mã:
 
